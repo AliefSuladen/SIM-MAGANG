@@ -1,0 +1,105 @@
+INFO - 2023-09-27 06:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 06:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 07:48:21 --> Undefined variable: user
+in APPPATH\Views\magang\v_list.php on line 19.
+ 1 APPPATH\Views\magang\v_list.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(185): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listmagang()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-27 07:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 07:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-27 08:00:20 --> Undefined index: devisi
+in APPPATH\Views\siswa\v_list.php on line 33.
+ 1 APPPATH\Views\siswa\v_list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: devisi', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(96): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-27 08:05:14 --> Undefined index: devisi
+in APPPATH\Views\siswa\v_list.php on line 33.
+ 1 APPPATH\Views\siswa\v_list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: devisi', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(96): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-27 08:05:15 --> Undefined index: devisi
+in APPPATH\Views\siswa\v_list.php on line 33.
+ 1 APPPATH\Views\siswa\v_list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: devisi', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(96): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-27 08:05:15 --> Undefined index: devisi
+in APPPATH\Views\siswa\v_list.php on line 33.
+ 1 APPPATH\Views\siswa\v_list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: devisi', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(96): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-27 08:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 08:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 09:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-27 10:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

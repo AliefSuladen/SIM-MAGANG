@@ -1,0 +1,562 @@
+INFO - 2023-09-28 18:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 18:46:23 --> Undefined index: judul
+in APPPATH\Views\magang\v_list.php on line 28.
+ 1 APPPATH\Views\magang\v_list.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: judul', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(198): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listmagang()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 18:46:38 --> Undefined index: judul
+in APPPATH\Views\magang\v_list.php on line 28.
+ 1 APPPATH\Views\magang\v_list.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: judul', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_list', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_list')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(198): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->listmagang()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 18:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 18:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-28 19:04:48 --> mysqli_sql_exception: Unknown column 'ukuran_file' in 'field list' in C:\xampp\htdocs\sim-magang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sim-magang\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\sim-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\sim-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\sim-magang\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\sim-magang\app\Models\M_admin.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sim-magang\app\Controllers\Admin.php(252): App\Models\M_admin->addmagang(Array)
+#6 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(915): App\Controllers\Admin->insertmagang()
+#7 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sim-magang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-28 19:04:48 --> Unknown column 'ukuran_file' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `magang` (`kelompok`, `waktu_mulai`, `waktu_selesai`, `pengantar`, `proposal`, `ukuran_file`, `divisi`) VALUES (:kelompok:, :waktu_mulai:, :waktu_selesai:, :pengantar:, :proposal:, :ukuran_file:, :divisi:)', [...], false)
+ 2 APPPATH\Models\M_admin.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Admin.php(252): App\Models\M_admin->addmagang([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->insertmagang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:07:16 --> Undefined index: judul
+in APPPATH\Views\siswa\v_addsiswa.php on line 48.
+ 1 APPPATH\Views\siswa\v_addsiswa.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: judul', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_addsiswa.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_addsiswa.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_addsiswa', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_addsiswa')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(107): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->addsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:07:20 --> Undefined index: judul
+in APPPATH\Views\siswa\v_addsiswa.php on line 48.
+ 1 APPPATH\Views\siswa\v_addsiswa.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: judul', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_addsiswa.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\siswa\\v_addsiswa.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('siswa/v_addsiswa', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('siswa/v_addsiswa')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(107): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->addsiswa()
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:30:20 --> Undefined index: id_magang
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:31:20 --> Undefined index: id_magang
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:31:20 --> Undefined index: id_magang
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:31:23 --> Undefined index: id_magang
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:08 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:09 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:09 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:10 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:10 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:10 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:11 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:32:18 --> Undefined variable: value
+in APPPATH\Views\magang\v_editmagang.php on line 22.
+ 1 APPPATH\Views\magang\v_editmagang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(265): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:34:52 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:36:06 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:36:06 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:36:06 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('4')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:36:12 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('1')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 19:38:04 --> Undefined variable: id_magang
+in APPPATH\Controllers\Admin.php on line 262.
+ 1 APPPATH\Controllers\Admin.php(262): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Controllers\\Admin.php', 262, [])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('1')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 19:44:33 --> Undefined index: penganter
+in APPPATH\Views\magang\v_editmagang.php on line 41.
+ 1 APPPATH\Views\magang\v_editmagang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: penganter', 'C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\magang\\v_editmagang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('magang/v_editmagang', [], true)
+ 5 APPPATH\Views\v_template.php(158): view('magang/v_editmagang')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\sim-magang\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Admin.php(264): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->editmagang('1')
+11 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 19:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 19:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 20:00:43 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(295): CodeIgniter\Model->__call('editmagang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 20:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 20:06:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(328): CodeIgniter\Model->__call('editmagang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:09:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(328): CodeIgniter\Model->__call('editmagang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 20:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 20:10:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(328): CodeIgniter\Model->__call('editmagang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 20:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 20:13:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(328): CodeIgniter\Model->__call('editmagang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:17:26 --> Illegal string offset 'id_magang'
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_magang\'', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:19:04 --> Illegal string offset 'id_magang'
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_magang\'', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 20:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-28 20:19:17 --> Illegal string offset 'id_magang'
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_magang\'', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:26:53 --> Allowed fields must be specified for model: "App\Models\M_admin"
+in SYSTEMPATH\BaseModel.php on line 1257.
+ 1 SYSTEMPATH\BaseModel.php(1257): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_admin')
+ 2 SYSTEMPATH\BaseModel.php(925): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Admin.php(330): CodeIgniter\Model->update('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-28 20:28:06 --> mysqli_sql_exception: Unknown column 'magang.id' in 'where clause' in C:\xampp\htdocs\sim-magang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sim-magang\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `magang`...', 0)
+#1 C:\xampp\htdocs\sim-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `magang`...')
+#2 C:\xampp\htdocs\sim-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `magang`...')
+#3 C:\xampp\htdocs\sim-magang\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `magang`...', Array, false)
+#4 C:\xampp\htdocs\sim-magang\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\sim-magang\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\sim-magang\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\sim-magang\app\Controllers\Admin.php(330): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+#9 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\sim-magang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sim-magang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-28 20:28:06 --> Unknown column 'magang.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `magang` SET `kelompok` = :kelompok:, `waktu_mulai` = :waktu_mulai:, `waktu_selesai` = :waktu_selesai:, `divisi` = :divisi:
+WHERE `magang`.`id` IN :magang.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(330): CodeIgniter\Model->update('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:29:11 --> Allowed fields must be specified for model: "App\Models\M_admin"
+in SYSTEMPATH\BaseModel.php on line 1257.
+ 1 SYSTEMPATH\BaseModel.php(1257): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_admin')
+ 2 SYSTEMPATH\BaseModel.php(925): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Admin.php(330): CodeIgniter\Model->update('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:29:38 --> Allowed fields must be specified for model: "App\Models\M_admin"
+in SYSTEMPATH\BaseModel.php on line 1257.
+ 1 SYSTEMPATH\BaseModel.php(1257): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_admin')
+ 2 SYSTEMPATH\BaseModel.php(925): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\Admin.php(330): CodeIgniter\Model->update('4', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:29:56 --> Illegal string offset 'id_magang'
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_magang\'', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang('4', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:32:04 --> Undefined index: id_magang
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-28 20:32:07 --> Undefined index: id_magang
+in APPPATH\Models\M_admin.php on line 48.
+ 1 APPPATH\Models\M_admin.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_magang', 'C:\\xampp\\htdocs\\sim-magang\\app\\Models\\M_admin.php', 48, [...])
+ 2 APPPATH\Controllers\Admin.php(330): App\Models\M_admin->edit_magang([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin->updatemagang('4')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
