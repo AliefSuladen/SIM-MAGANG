@@ -337,5 +337,5 @@ class Admin extends BaseController
             return redirect()->to(base_url('editmagang/' . $id_magang));
         }
     }
-        
+        //ppppp
 }
