@@ -42,10 +42,35 @@ class M_admin extends Model
             ->get()
             ->getRowArray();
     }
-    public function edit_magang($data)
+
+    public function get_siswa_by_magang($id_magang)
     {
-        $this->db->table('magang')
-            ->where('id_magang', $data['id_magang'])
-            ->update($data);
+        return $this->db->table('siswa')
+            ->where('id_magang', $id_magang)
+            ->get()
+            ->getResultArray();
+    }
+
+    public function get_siswa($id_siswa)
+    {
+        return $this->db->table('siswa')
+            ->where('id_siswa', $id_siswa)
+            ->join('magang', 'magang.id_magang = siswa.id_magang', 'left')
+            ->get()
+            ->getRowArray();
+    }
+    public function insert_nilai($data)
+    {
+        $this->db->table('nilai')->insert($data);
+    }
+
+    public function getAverageNilai()
+    {
+        $query = $this->db->table('nilai')
+            ->select('id_siswa, AVG(disiplin) as rata_disiplin, AVG(sikap) as rata_sikap, AVG(kejujuran) as rata_kejujuran, AVG(kerajinan) as rata_kerajinan, AVG(kerjasama) as rata_kerjasama, AVG(tanggungjawab) as rata_tanggungjawab, AVG(inisiatif) as rata_inisiatif, AVG(kreatifitas) as rata_kreatifitas, AVG(dtp) as rata_dtp, AVG(kualitas) as rata_kualitas')
+            ->groupBy('id_siswa')
+            ->get();
+
+        return $query->getResult();
     }
 }

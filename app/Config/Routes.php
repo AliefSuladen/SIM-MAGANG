@@ -21,3 +21,7 @@ $routes->get('addmagang', 'Admin::addmagang');
 $routes->get('editmagang/(:num)', 'Admin::editmagang/$1');
 $routes->post('insertmagang', 'Admin::insertmagang');
 $routes->post('updatemagang/(:num)', 'Admin::updatemagang/$1');
+
+$routes->get('listnilai/(:num)', 'Admin::listnilai/$1');
+$routes->get('addnilai/(:num)', 'Admin::addnilai/$1');
+$routes->post('insertnilai/(:num)', 'Admin::insertnilai/$1');

@@ -254,88 +254,94 @@ class Admin extends BaseController
             return redirect()->to(base_url('addmagang'));
         }
     }
-    public function editmagang($id_magang)
+
+    public function listnilai($id_magang)
     {
-        $data = array(
-            'title' => 'Tambah Kelompok Magang',
-            'page'    => 'magang/v_editmagang',
+        // Mengambil rata-rata nilai dari model
+        $rata_rata_nilai = $this->M_admin->getAverageNilai();
+
+        $data = [
+            'title' => 'Data Nilai',
+            'page' => 'nilai/v_list',
             'magang' => $this->M_admin->detail_magang($id_magang),
-        );
+            'siswa' => $this->M_admin->get_siswa_by_magang($id_magang),
+            'rata_rata_nilai' => $rata_rata_nilai, // Mengirimkan rata-rata nilai ke tampilan
+        ];
+
         return view('v_template', $data);
     }
 
 
-    public function updatemagang($id_magang)
+
+    public function addnilai($id_siswa)
     {
-        if ($this->validate([
-            'kelompok' => [
-                'label'  => 'Kelompok',
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib Diisi !!!'
-                ]
-            ],
-            'divisi' => [
-                'label'  => 'Divisi',
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib Diisi !!!',
-                ]
-            ],
-        ])) {
-            // Mengambil file pengantar magang
-            $pengantar = $this->request->getFile('pengantar');
-            // Mengambil file proposal magang
-            $proposal = $this->request->getFile('proposal');
+        $data = [
+            'title' => 'Data Nilai',
+            'page' => 'nilai/v_add',
+            // 'magang' => $this->M_admin->detail_magang($id_magang),
+            'siswa' => $this->M_admin->get_siswa($id_siswa),
 
-            if ($pengantar->getError() == 4 && $proposal->getError() == 4) {
-                // Jika kedua file tidak diubah
-                $data = [
-                    'kelompok' => $this->request->getPost('kelompok'),
-                    'waktu_mulai' => $this->request->getPost('waktu_mulai'),
-                    'waktu_selesai' => $this->request->getPost('waktu_selesai'),
-                    'divisi' => $this->request->getPost('divisi'),
-                ];
-            } else {
-                // Jika salah satu atau keduanya diubah
-                $magang = $this->M_admin->detail_magang($id_magang);
-
-                // Hapus file pengantar magang dan proposal magang yang lama
-                if (!empty($magang['pengantar'])) {
-                    unlink('file/' . $magang['pengantar']);
-                }
-                if (!empty($magang['proposal'])) {
-                    unlink('file/' . $magang['proposal']);
-                }
-
-                // Merandom nama file baru untuk pengantar magang
-                $namaFilePengantar = $pengantar->getRandomName();
-                $pengantar->move('file', $namaFilePengantar);
-
-                // Merandom nama file baru untuk proposal magang
-                    $namaFileProposal = $proposal->getRandomName();
-                    $proposal->move('file', $namaFileProposal);
-
-                    $data = [
-                        'kelompok' => $this->request->getPost('kelompok'),
-                        'waktu_mulai' => $this->request->getPost('waktu_mulai'),
-                        'waktu_selesai' => $this->request->getPost('waktu_selesai'),
-                        'pengantar' => $namaFilePengantar,
-                        'proposal' => $namaFileProposal,
-                        'divisi' => $this->request->getPost('divisi'),
-                    ];
-            }
-
-            // Menyimpan data ke dalam database menggunakan method update pada model
-                $this->M_admin->edit_magang($data);
-
-            session()->setFlashdata('pesan', 'Data Berhasil Di Update !!!');
-            return redirect()->to(base_url('listmagang'));
-        } else {
-            // Jika validasi tidak berhasil
-            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('editmagang/' . $id_magang));
-        }
+        ];
+        return view('v_template', $data);
     }
-        //ppppp
+    public function insertnilai($id_siswa)
+    {
+        // Dapatkan data siswa berdasarkan ID yang dikirimkan melalui URL
+        $data_siswa = $this->M_admin->get_siswa($id_siswa);
+
+        if (empty($data_siswa)) {
+            // Handle jika data siswa tidak ditemukan
+            return redirect()->to(base_url('listnilai'))->with('error', 'Siswa tidak ditemukan.');
+        }
+
+        // Dapatkan id_magang dari data siswa
+        $id_magang = $data_siswa['id_magang'];
+
+        // Lakukan validasi input nilai di sini (Anda dapat menggunakan library validasi CodeIgniter atau cara lain)
+
+        // Jika validasi berhasil, simpan nilai ke database
+        if ($this->request->getMethod() === 'post' && $this->validate([
+            'disiplin' => 'required|numeric',
+            'sikap' => 'required|numeric',
+            'kejujuran' => 'required|numeric',
+            'kerajinan' => 'required|numeric',
+            'kerjasama' => 'required|numeric',
+            'tanggungjawab' => 'required|numeric',
+            'inisiatif' => 'required|numeric',
+            'kreatifitas' => 'required|numeric',
+            'dtp' => 'required|numeric',
+            'kualitas' => 'required|numeric',
+            // Tambahkan aturan validasi untuk input lainnya di sini
+        ])) {
+            // Ambil nilai-nilai dari form
+            $data = [
+                'id_siswa' => $id_siswa,
+                'disiplin' => $this->request->getPost('disiplin'),
+                'sikap' => $this->request->getPost('sikap'),
+                'kejujuran' => $this->request->getPost('kejujuran'),
+                'kerajinan' => $this->request->getPost('kerajinan'),
+                'kerjasama' => $this->request->getPost('kerjasama'),
+                'tanggungjawab' => $this->request->getPost('tanggungjawab'),
+                'inisiatif' => $this->request->getPost('inisiatif'),
+                'kreatifitas' => $this->request->getPost('kreatifitas'),
+                'dtp' => $this->request->getPost('dtp'),
+                'kualitas' => $this->request->getPost('kualitas'),
+            ];
+
+            // Simpan data nilai ke database (gunakan model)
+            $this->M_admin->insert_nilai($data);
+
+            // Redirect kembali ke halaman sebelumnya atau halaman lain
+            return redirect()->to(base_url('listnilai/' . $id_magang))->with('success', 'Nilai berhasil disimpan.');
+        }
+
+        // Jika validasi gagal atau halaman pertama kali diakses, tampilkan halaman input nilai
+        $data = [
+            'title' => 'Input Nilai',
+            'page' => 'nilai/v_input',
+            'siswa' => $data_siswa,
+        ];
+
+        return view('v_template', $data);
+    }
 }
